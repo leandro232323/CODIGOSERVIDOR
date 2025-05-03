@@ -16,6 +16,7 @@ app.get('/iniciar', (req, res) => {
     res.send("El servidor esta funcionando corretamente")
 })
 
+
 app.post('/registrar', async (req, res) => {
     let nombreUsuario = req.body.nombre
     let correoUsuario = req.body.correo
