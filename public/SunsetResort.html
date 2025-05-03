@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReserveEasy</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>  
+    <header>
+        <h1 id="tituloEncabezado">ReserveEasy</h1>
+        <ul style="user-select: none;">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./tabla.html">Hoteles</a></li>
+            <li><a href="./cliente.html">Cliente</a></li>
+            <li><a href="">Experiencias</a></li>
+            <li><a href="">Bonos </a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="">Ofertas</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section style="position: relative; top: 28px;">
+            <h1 class="tituloPrincipal" style="user-select: none;">Sunset Resort - Mallorca, España</h1>
+            <div class="contenedorImagenes">
+                <img src="./assets/ImagenesHoteles/li-yang-a8iCZvtrHpQ-unsplash.jpg" alt="" class="imagenesPortada">
+                <img src="./assets/ImagenesHoteles/daniel-frank-QP0topr6RYs-unsplash.jpg" alt="" class="imagenesPortada">
+            </div>
+        </section>
+        <br><br>
+
+        <section class="section">
+            <div class="contenedorOferta">
+                <p style="font-weight: bold;font-size: 35px;margin-bottom: 15px;">Descripción</p>
+                <p style="font-size: 20px;">Descubre que tiene este hotel</p>
+                <img src="./assets/ImagenesHoteles/marko-markovic-37ylc3LqVNc-unsplash.jpg" alt="" class="imagenVenta">
+                <aside class="contenidoImagen">
+                    <div class="contenido">
+                        <br>
+                        <p style="font-size: 19px;">Sunset Resort: Lujo, entretenimiento y atardeceres inolvidables en Mallorca</p><br>
+                        <p>
+                        Ubicado en la paradisíaca isla de Mallorca, el <strong>Sunset Resort</strong> <br>es el destino perfecto para disfrutar de espectaculares vistas al atardecer, actividades para toda la familia y una experiencia <br>inolvidable frente al mar.
+                        </p><br>
+
+                        <ul>
+                            <li>Vistas privilegiadas al atardecer desde todas las habitaciones</li>
+                            <li>Bar de cócteles con mixología internacional</li>
+                            <li>Club infantil con actividades recreativas</li>
+                            <li>Shows nocturnos en vivo todos los días</li>
+                        </ul><br>
+
+                        <p>
+                        Con una puntuación promedio de <strong>4.7 estrellas</strong>, Sunset Resort <br>combina comodidad, diversión y paisajes increíbles para unas <br>vacaciones inolvidables.
+                        </p>
+
+                        <button class="botonContenidoOferta">Reservar ahora</button>
+                        <div id="modalReserva" class="modal">
+                            <div class="modal-contenido">
+                                <span class="cerrar">&times;</span>
+                                <h2>Formulario de Reserva</h2>
+                                <form class="formulario">
+                                    <label for="nombre" style="margin-left: 10px;">Nombre completo:</label><br><br>
+                                    <input type="text" id="nombre" name="nombre" class="longitudInput" required><br><br>
+
+                                    <label for="correo" style="margin-left: 10px;">Correo electrónico:</label><br><br>
+                                    <input type="email" id="correo" name="correo" required><br><br>
+
+                                    <label for="fecha" style="margin-left: 10px;">Fecha de llegada:</label><br><br>
+                                    <input type="date" id="fechaUno" name="fechaUno" required><br><br>
+
+                                    <label for="noches" style="margin-left: 10px;">Número de noches:</label><br><br>
+                                    <input type="number" id="noches" name="noches" min="1" required><br><br>
+
+                                    <button type="submit" class="botonReservarModal" style="margin-left: 10px;">Confirmar reserva</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">SERVICIOS</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">ATARDECER</td>
+                        <td class="longitudInput">Admira los mejores atardeceres desde cualquier punto del resort.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">CÓCTELES</td>
+                        <td class="longitudInput">Disfruta de cócteles exclusivos preparados por mixólogos expertos.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">CLUB INFANTIL</td>
+                        <td class="longitudInput">Actividades lúdicas y recreativas para los más pequeños de la familia.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">SHOWS</td>
+                        <td class="longitudInput">Espectáculos nocturnos para toda la familia, todas las noches.</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">PLANES</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">ELEGANTE</td>
+                        <td class="longitudInput">Suite con vista al mar, cócteles de bienvenida y acceso a show nocturno. <br>
+                            <strong>Precio:</strong> $120.000 por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">FAMILIAR</td>
+                        <td class="longitudInput">Habitación amplia, acceso al club infantil y cena temática. <br>
+                            <strong>Precio:</strong> $200.000 por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">AVENTURA</td>
+                        <td class="longitudInput">Paquete con excursiones por Mallorca, cócteles y show especial. <br>
+                            <strong>Precio:</strong> $250.000 por noche.</td>
+                    </tr>
+                </table>
+            </form>
+
+            <button class="botonReservacion">REALIZAR RESERVACION</button>
+        </div>
+
+        <section class="experiencias" style="margin-bottom: 30px;margin-top: -73px;">
+            <div class="contenedorExperiencias" style=" width: 1227px;">
+                <p style="font-weight: bold;font-size: 30px;">NUESTROS SERVICIOS</p>
+                <p style="font-size: 22px;">Aquí encontrarás los servicios que ofrecemos.</p>
+
+                <div class="contenedorImagenesExperiencias">
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/sebastien-gabriel--IMlv9Jlb24-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">ATARDECER</p>
+                            <p style="color: white;">Momentos mágicos frente al mar con el sol escondiéndose en el horizonte.</p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/ash-edmonds-fsI-_MRsic0-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">CÓCTELES</p>
+                            <p style="color: white;">Bebidas únicas para disfrutar en un ambiente relajado junto a la piscina.</p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/myles-tan-WNAO036c6FM-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">CLUB INFANTIL</p>
+                            <p style="color: white;">Diversión garantizada para los niños con personal especializado.</p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/oscar-keys-ojVMh1QTVGY-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">SHOWS</p>
+                            <p style="color: white;">Espectáculos en vivo que harán de tus noches algo inolvidable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="position: relative; top: 28px; display: flex; flex-direction: column; align-items: center;">
+            <p style="font-weight: bold; font-size: 35px; margin-bottom: 15px;">¡Cuéntanos tu experiencia!</p>
+            <form class="formulario">
+                <input type="text" id="opinion" name="opinion" class="longitudInput" style="height: 200px;" required>
+            </form>
+            <button class="botonSubmit">ENVIAR TU RESEÑA</button><br><br><br><br><br>
+        </section> 
+        <br><br>
+    </main>
+
+    <footer>
+        <h1 style="font-size: 22px;">© 2025 ReserveEasy. Todos los derechos reservados.</h1>
+        <div class="contenidoFooter">
+            <div class="contenidoUno">
+                <p>IBERIK AUGAS SANTAS <br>BALNEARIO & GOLF **** <br>Pantón (Lugo) <br>982 292 800</p>
+            </div>
+
+            <div class="contenidoDos">
+                <p>IBERIK <br>GRAN BALNEARIO <br>DE GUITIRIZ **** <br>Guitiriz (Lugo) <br>982 920 090</p>
+            </div>
+
+            <div class="contenidoTres">
+                <p>IBERIK <br>ROCALLAURA <br>BALNEARI **** <br>Rocallaura (Lleida) <br>973 330 632</p>
+            </div>
+
+            <div class="contenidoCuatro">
+                <p>IBERIK <br>SANTO DOMINGO <br>PLAZA HOTEL **** <br>Oviedo (Asturias) <br>985 207 880</p>
+            </div>
+
+            <div class="contenidoCinco">
+                <p>IBERIK <br>TURISMO RURAL <br>CASA VILAMOR <br>O Saviñao (Lugo) <br>661 536 257</p>
+            </div>
+        </div>
+
+        <h2>CONTACTO | QUIÉNES SOMOS | EMPLEO</h2>
+    </footer>
+    <script>
+        const modal = document.getElementById("modalReserva");
+        const cerrarBtn = document.querySelector(".cerrar");
+        const botonesReserva = document.querySelectorAll(".botonContenidoOferta, .botonReservacion");
+    
+        botonesReserva.forEach(btn => {
+            btn.addEventListener("click", () => {
+                modal.style.display = "flex";
+            });
+        });
+    
+        cerrarBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

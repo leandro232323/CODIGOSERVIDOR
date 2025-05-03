@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReserveEasy</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>  
+    <header>
+        <h1 id="tituloEncabezado">ReserveEasy</h1>
+        <ul style="user-select: none;">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./tabla.html">Hoteles</a></li>
+            <li><a href="./cliente.html">Cliente</a></li>
+            <li><a href="">Experiencias</a></li>
+            <li><a href="">Bonos </a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="">Ofertas</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section style="position: relative; top: 28px;">
+            <h1 class="tituloPrincipal" style="user-select: none;">Hotel Aurora - Cancún, México</h1>
+            <div class="contenedorImagenes">
+                <img src="./assets/ImagenesHoteles/Hotelmexico.jpg" alt="" class="imagenesPortada">
+                <img src="./assets/ImagenesHoteles/andreas-m-88intec2Q5Q-unsplash.jpg" alt="" class="imagenesPortada">
+            </div>
+        </section>
+        <br><br>
+
+        <section class="section">
+            <div class="contenedorOferta">
+                <p style="font-weight: bold;font-size: 35px;margin-bottom: 15px;">Descripción</p>
+                <p style="font-size: 20px;">Descubre que tiene este hotel</p>
+                <img src="./assets/ImagenesHoteles/aman-mzEyEp3syMI-unsplash.jpg" alt="" class="imagenVenta">
+                <aside class="contenidoImagen">
+                    <div class="contenido">
+                        <br>
+                        <p style="font-size: 19px;">Hotel Aurora: Lujo y confort en el corazón del Caribe</p><br>
+                        <p>
+                        Ubicado en las playas paradisíacas de Cancún, el <strong>Hotel Aurora</strong> <br>ofrece una experiencia de hospedaje única que combina elegancia,<br> comodidad y hospitalidad de primer nivel. Ideal para familias, <br>parejas y viajeros que buscan descanso y aventura, este hotel <br>destaca por sus instalaciones modernas y su atención al detalle.
+                        </p><br>
+
+                        <ul>
+                            <li>Habitaciones con vistas al mar Caribe y decoración <br>contemporánea</li>
+                            <li>WiFi gratuito de alta velocidad en todo el establecimiento</li>
+                            <li>Piscina al aire libre con zona de bar y tumbonas</li>
+                            <li>Desayuno buffet diario con opciones internacionales y <br>locales</li>
+                            <li>Estacionamiento privado incluido para todos los huéspedes</li>
+                        </ul><br>
+
+                        <p>
+                        Con una puntuación promedio de <strong>4.5 estrellas</strong>, el Hotel Aurora <br>es una opción destacada entre los viajeros que valoran el confort, <br>el servicio amable y una ubicación privilegiada cerca de las <br>principales atracciones de Cancún.
+                        </p>
+
+
+                        <button class="botonContenidoOferta">Reservar ahora</button>
+                        <div id="modalReserva" class="modal">
+                            <div class="modal-contenido">
+                                <span class="cerrar">&times;</span>
+                                <h2>Formulario de Reserva</h2>
+                                <form class="formulario">
+                                    <label for="nombre" style="margin-left: 10px;">Nombre completo:</label><br><br>
+                                    <input type="text" id="nombre" name="nombre" class="longitudInput" required><br><br>
+
+                                    <label for="correo" style="margin-left: 10px;">Correo electrónico:</label><br><br>
+                                    <input type="email" id="correo" name="correo" required><br><br>
+
+                                    <label for="fecha" style="margin-left: 10px;">Fecha de llegada:</label><br><br>
+                                    <input type="date" id="fechaUno" name="fechaUno" required><br><br>
+
+                                    <label for="noches" style="margin-left: 10px;">Número de noches:</label><br><br>
+                                    <input type="number" id="noches" name="noches" min="1" required><br><br>
+
+                                    <button type="submit" class="botonReservarModal" style="margin-left: 10px;">Confirmar reserva</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">SERVICIOS</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">WIFI</td>
+                        <td class="longitudInput">Conexión WiFi de alta velocidad disponible en todas las áreas del hotel.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">PISCINA</td>
+                        <td class="longitudInput">Piscina al aire libre con zona de descanso, bar acuático y vista al mar.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">DESAYUNO</td>
+                        <td class="longitudInput">Desayuno tipo buffet con opciones locales e internacionales todos los días.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">ESTACIONAMIENTO</td>
+                        <td class="longitudInput">Estacionamiento privado y gratuito disponible para todos los huéspedes.</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">PLANES</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">SOLITARIO</td>
+                        <td class="longitudInput">Incluye una habitación individual, desayuno incluido y acceso a todas las zonas comunes del hotel. <br>
+                            <strong>Precio:</strong> $150.000 pesos por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">PAREJA</td>
+                        <td class="longitudInput">Habitación doble con cama king, cena romántica de cortesía y descuentos en el spa. <br>
+                            <strong>Precio:</strong> $250.000 pesos por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">FAMILIAR</td>
+                        <td class="longitudInput">Suite familiar para hasta 4 personas, desayuno buffet, actividades recreativas para niños y servicio de niñera disponible. <br>
+                            <strong>Precio:</strong> $350.000 pesos por noche.</td>
+                    </tr>
+                </table>
+            </form>
+
+            <button class="botonReservacion">REALIZAR RESERVACION</button>
+        </div>
+
+        <section class="experiencias" style="margin-bottom: 30px;margin-top: -73px;">
+            <div class="contenedorExperiencias" style=" width: 1227px;">
+                <p style="font-weight: bold;font-size: 30px;">NUESTROS SERVICIOS</p>
+                <p style="font-size: 22px;">Aquí encontrarás los servicios que ofrecemos.</p>
+
+                <div class="contenedorImagenesExperiencias">
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/dreamlike-street-sOdVYQQo4UU-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">Wifi</p>
+                            <p style="color: white;">
+                                En el Hotel Aurora, mantenerse conectado es sencillo. Ofrecemos WiFi de alta
+                                velocidad completamente gratuito en todas las áreas del hotel, incluyendo
+                                habitaciones, áreas comunes, piscina y restaurante. Ya sea para trabajar,
+                                hacer videollamadas, o simplemente disfrutar de tus plataformas favoritas,
+                                nuestra red te garantiza una conexión estable y segura durante toda tu estadía.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/jubeo-hernandez-ZmWLGkPe1Sg-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">PISCINA</p>
+                            <p style="color: white;">
+                                Disfruta de un ambiente tropical en nuestra piscina al aire libre, diseñada
+                                para el descanso y la diversión. Rodeada de cómodas tumbonas y con un bar a
+                                pocos pasos, es el lugar ideal para tomar el sol, disfrutar de una bebida
+                                refrescante o simplemente relajarte con la brisa del Caribe. Además, la
+                                piscina cuenta con una vista espectacular al mar que hará de cada momento una
+                                experiencia inolvidable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/iason-raissis-bKai3u16lTE-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">DESAYUNO</p>
+                            <p style="color: white;">
+                                Cada mañana, el Hotel Aurora te ofrece un delicioso desayuno tipo buffet con
+                                una amplia variedad de opciones locales e internacionales. Desde frutas frescas,
+                                pan recién horneado y jugos naturales, hasta huevos al gusto, quesos, embutidos
+                                y platos típicos de la región. Ya sea que prefieras un desayuno ligero o más
+                                completo, encontrarás lo que necesitas para empezar el día con energía.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/adrien-fu-RMLt7FsuPOo-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">ESTACIONAMIENTO</p>
+                            <p style="color: white;">
+                                En el Hotel Aurora, tu tranquilidad es prioridad. Por eso, ofrecemos
+                                estacionamiento privado, gratuito y disponible las 24 horas para todos
+                                nuestros huéspedes. Con vigilancia y acceso controlado, podrás disfrutar de
+                                tu estadía sabiendo que tu vehículo está en un lugar seguro y cercano a todas
+                                las instalaciones del hotel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="position: relative; top: 28px; display: flex; flex-direction: column; align-items: center;">
+            <p style="font-weight: bold; font-size: 35px; margin-bottom: 15px;">¡Cuéntanos tu experiencia!</p>
+            <form class="formulario">
+                <input type="text" id="opinion" name="opinion" class="longitudInput" style="height: 200px;" required>
+            </form>
+            <button class="botonSubmit">ENVIAR TU RESEÑA</button><br><br><br><br><br>
+        </section>        
+        <br><br>
+    </main>
+
+    <footer>
+        <h1 style="font-size: 22px;">© 2025 ReserveEasy. Todos los derechos reservados.</h1>
+        <div class="contenidoFooter">
+            <div class="contenidoUno">
+                <p>IBERIK
+                    AUGAS SANTAS <br>
+                    BALNEARIO & GOLF **** <br>
+
+                    Pantón (Lugo) <br>
+
+                    982 292 800</p>
+            </div>
+
+            <div class="contenidoDos">
+                <p>
+                    IBERIK <br>
+                    GRAN BALNEARIO <br>
+                    DE GUITIRIZ **** <br>
+
+                    Guitiriz (Lugo) <br>
+
+                    982 920 090
+                </p>
+            </div>
+
+            <div class="contenidoTres">
+                <p>
+                    IBERIK <br>
+                    ROCALLAURA <br>
+                    BALNEARI **** <br>
+
+                    Rocallaura (Lleida) <br>
+
+                    973 330 632
+                </p>
+            </div>
+
+            <div class="contenidoCuatro">
+                <p>
+                    IBERIK <br>
+                    SANTO DOMINGO <br>
+                    PLAZA HOTEL **** <br>
+
+                    Oviedo (Asturias) <br>
+
+                    985 207 880
+                </p>
+            </div>
+
+            <div class="contenidoCinco">
+                <p>
+                    IBERIK <br>
+                    TURISMO RURAL <br>
+                    CASA VILAMOR <br>
+
+                    O Saviñao (Lugo) <br>
+
+                    661 536 257
+                </p>
+            </div>
+
+        </div>
+
+        <h2>CONTACTO | QUIÉNES SOMOS | EMPLEO</h2>
+    </footer>
+    <script>
+        const modal = document.getElementById("modalReserva");
+        const cerrarBtn = document.querySelector(".cerrar");
+        const botonesReserva = document.querySelectorAll(".botonContenidoOferta, .botonReservacion");
+    
+        botonesReserva.forEach(btn => {
+            btn.addEventListener("click", () => {
+                modal.style.display = "flex";
+            });
+        });
+    
+        cerrarBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

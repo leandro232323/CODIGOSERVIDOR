@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReserveEasy</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>  
+    <header>
+        <h1 id="tituloEncabezado">ReserveEasy</h1>
+        <ul style="user-select: none;">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./tabla.html">Hoteles</a></li>
+            <li><a href="./cliente.html">Cliente</a></li>
+            <li><a href="">Experiencias</a></li>
+            <li><a href="">Bonos </a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="">Ofertas</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section style="position: relative; top: 28px;">
+            <h1 class="tituloPrincipal" style="user-select: none;">Royal Palace - Paris, Francia</h1>
+            <div class="contenedorImagenes">
+                <img src="./assets/ImagenesHoteles/tom-podmore-SaW5DBItJHI-unsplash.jpg" alt="" class="imagenesPortada">
+                <img src="./assets/ImagenesHoteles/michelle-williams-rcdA8iTuWng-unsplash.jpg" alt="" class="imagenesPortada">
+            </div>
+        </section>
+        <br><br>
+
+        <section class="section">
+            <div class="contenedorOferta">
+                <p style="font-weight: bold;font-size: 35px;margin-bottom: 15px;">Descripción</p>
+                <p style="font-size: 20px;">Descubre que tiene este hotel</p>
+                <img src="./assets/ImagenesHoteles/datingjungle-S0n8hOVFOfI-unsplash.jpg" alt="" class="imagenVenta">
+                <aside class="contenidoImagen">
+                    <div class="contenido">
+                        <br>
+                        <p style="font-size: 19px;">Royal Palace: Lujo, exclusividad y elegancia en el <br>corazón de París</p><br>
+                        <p>
+                        Situado en la romántica ciudad de Paris, el <strong>Royal Palace</strong> ofrece una experiencia de lujo incomparable con servicios exclusivos y atención personalizada. Perfecto para viajeros exigentes que buscan una <br>estadía inolvidable.
+                        </p><br>
+
+                        <ul>
+                            <li>Hotel de lujo con instalaciones premium</li>
+                            <li>Champaña de cortesía al llegar</li>
+                            <li>Traslado en helicóptero disponible</li>
+                            <li>Atención personalizada y servicio VIP</li>
+                        </ul><br>
+
+                        <p>
+                        Con una puntuación promedio de <strong>4.9 estrellas</strong>, Royal Palace es la elección ideal para una experiencia elegante y sofisticada en la <br>ciudad luz.
+                        </p>
+
+                        <button class="botonContenidoOferta">Reservar ahora</button>
+                        <div id="modalReserva" class="modal">
+                            <div class="modal-contenido">
+                                <span class="cerrar">&times;</span>
+                                <h2>Formulario de Reserva</h2>
+                                <form class="formulario">
+                                    <label for="nombre" style="margin-left: 10px;">Nombre completo:</label><br><br>
+                                    <input type="text" id="nombre" name="nombre" class="longitudInput" required><br><br>
+
+                                    <label for="correo" style="margin-left: 10px;">Correo electrónico:</label><br><br>
+                                    <input type="email" id="correo" name="correo" required><br><br>
+
+                                    <label for="fecha" style="margin-left: 10px;">Fecha de llegada:</label><br><br>
+                                    <input type="date" id="fechaUno" name="fechaUno" required><br><br>
+
+                                    <label for="noches" style="margin-left: 10px;">Número de noches:</label><br><br>
+                                    <input type="number" id="noches" name="noches" min="1" required><br><br>
+
+                                    <button type="submit" class="botonReservarModal" style="margin-left: 10px;">Confirmar reserva</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">SERVICIOS</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">HOTEL DE LUJO</td>
+                        <td class="longitudInput">Instalaciones premium con atención exclusiva para nuestros huéspedes más exigentes.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">CHAMPÁÑA</td>
+                        <td class="longitudInput">Disfruta de una botella de champaña francesa al momento del check-in.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">TRASLADO EN HELICÓPTERO</td>
+                        <td class="longitudInput">Servicio exclusivo para llegar o salir del hotel con estilo y rapidez.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">SERVICIO VIP</td>
+                        <td class="longitudInput">Atención personalizada y detalles únicos durante toda tu estadía.</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">PLANES</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">ELEGANTE</td>
+                        <td class="longitudInput">Habitación de lujo individual con champaña de bienvenida y desayuno incluido. <br>
+                            <strong>Precio:</strong> $120.000 por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">ROMÁNTICO</td>
+                        <td class="longitudInput">Suite para parejas con cena gourmet, traslado en helicóptero y masajes. <br>
+                            <strong>Precio:</strong> $300.000 por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">VIP</td>
+                        <td class="longitudInput">Estancia personalizada con mayordomo, experiencia de compras privada y cena en la Torre Eiffel. <br>
+                            <strong>Precio:</strong> $400.000 por noche.</td>
+                    </tr>
+                </table>
+            </form>
+
+            <button class="botonReservacion">REALIZAR RESERVACION</button>
+        </div>
+
+        <section class="experiencias" style="margin-bottom: 30px;margin-top: -73px;">
+            <div class="contenedorExperiencias" style=" width: 1227px;">
+                <p style="font-weight: bold;font-size: 30px;">NUESTROS SERVICIOS</p>
+                <p style="font-size: 22px;">Aquí encontrarás los servicios que ofrecemos.</p>
+
+                <div class="contenedorImagenesExperiencias">
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/frames-for-your-heart-zSG-kd-L6vw-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">HOTEL DE LUJO</p>
+                            <p style="color: white;">
+                                Disfruta de una experiencia cinco estrellas con atención personalizada y exclusividad.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/alexander-naglestad-xzKtOI1Cnxo-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">CHAMPÁÑA</p>
+                            <p style="color: white;">
+                                Celebra tu llegada con una copa de champaña francesa al check-in.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/phil-w-BibxoLzkbg4-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">TRASLADO EN HELICÓPTERO</p>
+                            <p style="color: white;">
+                                Llegar o partir del hotel nunca había sido tan emocionante y elegante.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/jakub-zerdzicki-8AHRUprVOk4-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">SERVICIO VIP</p>
+                            <p style="color: white;">
+                                Atención personalizada y detalles únicos durante toda tu estadía.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="position: relative; top: 28px; display: flex; flex-direction: column; align-items: center;">
+            <p style="font-weight: bold; font-size: 35px; margin-bottom: 15px;">¡Cuéntanos tu experiencia!</p>
+            <form class="formulario">
+                <input type="text" id="opinion" name="opinion" class="longitudInput" style="height: 200px;" required>
+            </form>
+            <button class="botonSubmit">ENVIAR TU RESEÑA</button><br><br><br><br><br>
+        </section> 
+        <br><br>
+    </main>
+
+    <footer>
+        <h1 style="font-size: 22px;">© 2025 ReserveEasy. Todos los derechos reservados.</h1>
+        <div class="contenidoFooter">
+            <div class="contenidoUno">
+                <p>IBERIK
+                    AUGAS SANTAS <br>
+                    BALNEARIO & GOLF **** <br>
+
+                    Pantón (Lugo) <br>
+
+                    982 292 800</p>
+            </div>
+
+            <div class="contenidoDos">
+                <p>
+                    IBERIK <br>
+                    GRAN BALNEARIO <br>
+                    DE GUITIRIZ **** <br>
+
+                    Guitiriz (Lugo) <br>
+
+                    982 920 090
+                </p>
+            </div>
+
+            <div class="contenidoTres">
+                <p>
+                    IBERIK <br>
+                    ROCALLAURA <br>
+                    BALNEARI **** <br>
+
+                    Rocallaura (Lleida) <br>
+
+                    973 330 632
+                </p>
+            </div>
+
+            <div class="contenidoCuatro">
+                <p>
+                    IBERIK <br>
+                    SANTO DOMINGO <br>
+                    PLAZA HOTEL **** <br>
+
+                    Oviedo (Asturias) <br>
+
+                    985 207 880
+                </p>
+            </div>
+
+            <div class="contenidoCinco">
+                <p>
+                    IBERIK <br>
+                    TURISMO RURAL <br>
+                    CASA VILAMOR <br>
+
+                    O Saviñao (Lugo) <br>
+
+                    661 536 257
+                </p>
+            </div>
+
+        </div>
+
+        <h2>CONTACTO | QUIÉNES SOMOS | EMPLEO</h2>
+    </footer>
+    <script>
+        const modal = document.getElementById("modalReserva");
+        const cerrarBtn = document.querySelector(".cerrar");
+        const botonesReserva = document.querySelectorAll(".botonContenidoOferta, .botonReservacion");
+    
+        botonesReserva.forEach(btn => {
+            btn.addEventListener("click", () => {
+                modal.style.display = "flex";
+            });
+        });
+    
+        cerrarBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: #00369C;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+header {
+    background-color: #00369C;
+    color: white;
+    display: flex;
+    height: 78px;
+}
+
+header li {
+    text-align: center;
+    padding: 14px;
+    font-size: 18px;
+}
+
+header ul {
+    display: flex;
+    gap: 84px;
+    align-items: center;
+    position: relative;
+    left: 98px;
+    width: 1153px;
+    justify-content: center;
+}
+
+header ul,
+li {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #BCCCDC;
+}
+
+.imagenesPortada {
+    width: 611px;
+    height: 457px;
+}
+
+.imagenVenta {
+    width: 967px;
+    height: 632px;
+}
+
+/* Elimina position: relative del contenedor de imágenes */
+.contenedorImagenes {
+    width: 1509px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    margin-top: 18px;
+    /* Usa margen en lugar de top */
+}
+
+.tituloPrincipal {
+    text-align: center;
+}
+
+#tituloEncabezado {
+    position: relative;
+    left: 22px;
+    top: -2px;
+}
+
+/* styles.css (secciones) */
+.sectionReservar {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 5px;
+    margin-top: 79px;
+    height: 49px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.botones {
+    width: 119px;
+    border-radius: 6px;
+    border: transparent;
+    background: #00369C;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0, 3s ease;
+}
+
+.botones:hover {
+    background: #577BC1;
+    cursor: pointer;
+}
+
+.formulario input[type="date"] {
+    width: 775px;
+    height: 29px;
+    position: relative;
+    left: 10px;
+}
+
+
+.sectionReservar input[type="text"],
+.sectionReservar input[type="date"][name="fechaUno"],
+.sectionReservar input[type="date"][name="fechaDos"] {
+    width: 160px;
+    border: transparent;
+    user-select: none;
+    font-size: 17px;
+}
+
+
+.sectionReservar input[type="text"],
+.sectionReservar input[type="date"][name="fechaUno"],
+.sectionReservar input[type="date"][name="fechaDos"]:hover {
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #00369C;
+    color: white;
+    font-size: 12px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contenidoImagen {
+    height: 428px;
+    width: 528px;
+    position: relative;
+    bottom: 351px;
+    background: white;
+}
+
+.contenidoImagenDos {
+    height: 428px;
+    width: 528px;
+    position: relative;
+    bottom: 351px;
+    background: white;
+    left: 439px;
+}
+
+.contenedorOferta {
+    height: 987px;
+}
+
+.contenido {
+    position: relative;
+    left: 17px;
+    user-select: none;
+}
+
+.contenidoDOS {
+    position: relative;
+    left: 17px;
+    user-select: none;
+}
+
+.contenido li {
+    list-style-type: circle;
+    color: gray;
+}
+
+.contenidoDOS li {
+    list-style-type: circle;
+    color: gray;
+}
+
+.botonContenidoOferta {
+    padding: 13px;
+    text-align: center;
+    width: 500px;
+    border-radius: 6px;
+    border: transparent;
+    /* text-align: center; */
+    background: #00369C;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 62px;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+}
+
+.botonContenidoOferta:hover {
+    background: #577BC1;
+    cursor: pointer;
+}
+
+
+.botonReservacion {
+    padding: 13px;
+    text-align: center;
+    width: 200px;
+    border-radius: 6px;
+    border: transparent;
+    /* text-align: center; */
+    background: #00369C;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 62px;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    position: relative;
+    top: 35px;
+}
+
+.botonReservacion:hover {
+    background: #577BC1;
+    cursor: pointer;
+}
+
+.botonSubmit {
+    padding: 13px;
+    text-align: center;
+    width: 200px;
+    border-radius: 6px;
+    border: transparent;
+    background: #00369C;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 62px;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    position: relative;
+    top: 35px;
+}
+
+.botonSubmit:hover {
+    background: #577BC1;
+    cursor: pointer;
+}
+
+.seccionFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 46px;
+}
+
+.longitudDatos {
+    width: 369px;
+    height: 50px;
+    padding: 9px;
+    font-size: 17px;
+    user-select: none;
+
+}
+
+.longitudInput {
+    width: 800px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario input[type="password"],
+.formulario input[type="date"][name="fechaReservacion"],
+.formulario input[type="date"][name="fechaNacimiento"],
+.formulario input[type="email"],
+.formulario input[type="file"] {
+    width: 770px;
+    position: relative;
+    left: 10px;
+    height: 29px;
+}
+
+.formulario input[type="date"][name="fechaReservacion"],
+.formulario input[type="date"][name="fechaNacimiento"] {
+    border: 1px solid;
+}
+
+.celda {
+    border-bottom: 1px solid;
+    border-color: black;
+}
+
+.imagen {
+    width: 140px;
+    height: 100px;
+}
+
+.hotelMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px;
+    background-color: #F5F7F8;
+}
+
+.contenidoHoteles {
+    background: white;
+    padding: 34px;
+    width: 1333px;
+    margin-top: 16px;
+    margin-bottom: 29px;
+}
+
+.contenidoCelda {
+    color: #4C585B;
+    text-align: center;
+}
+
+
+.hotel-tabla {
+    border-collapse: collapse;
+    border: none;
+}
+
+.hotelEncabezados {
+    height: 66px;
+    background: #2F3645;
+    color: white;
+}
+
+.hotelEncabezados th {
+    font-weight: normal;
+}
+
+.tituloHotel {
+    font-size: 37px;
+    color: #4C585B;
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.imagen {
+    border-radius: 12px;
+    width: 120px;
+    height: 100px;
+}
+
+.contenidoCeldaImagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 138px;
+}
+
+.opcionesHotel {
+    border-bottom: 1px solid;
+    border-color: #4C585B;
+    height: 158px;
+    transition: transform 0.2s ease;
+    -webkit-transition: transform 0.2s ease;
+    -moz-transition: transform 0.2s ease;
+}
+
+.opcionesHotel:hover {
+    transform: translateX(-50px);
+    cursor: pointer;
+}
+
+.botonMirar {
+    width: 101px;
+    height: 53px;
+    text-align: center;
+    border-radius: 10px;
+    border: transparent;
+    background: #00369C;
+    color: white;
+    transition: background 0.2s ease;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+}
+
+.botonMirar:hover {
+    background: #577BC1;
+    cursor: pointer;
+}
+
+.experiencias {
+    display: flex;
+    justify-content: center;
+}
+
+
+.hotel-imagen {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 494px;
+    width: 570px;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.hotel-imagen::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.contenidoImagen-hotel {
+    width: 432px;
+    height: 420px;
+    z-index: 1;
+}
+
+.contenedorImagenesExperiencias {
+    perspective: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 92%;
+    justify-content: center;
+}
+
+.contenidoFooter {
+    display: flex;
+    gap: 203px;
+    margin-bottom: 20px;
+    margin-top: 14px;
+}
+
+.botonContenidoImagen {
+    width: 141px;
+    height: 53px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border-color: white;
+    position: relative;
+    top: 11px;
+    transition: background 0.3s ease;
+}
+
+.botonContenidoImagen:hover {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+footer h1 {
+    font-size: 18px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #024CAA;
+}
+
+.botonReservarModal {
+    background-color: #024CAA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botonReservarModal:hover{
+    background: #577BC1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+}
+
+#seccionLogin {
+    background-image: url('./assets/fondoLogin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+#seccionCrearCuenta{
+    background-image: url('./assets/fondoLogin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+#login {
+    background-color: white;
+    border: 1px solid;
+    border-color: white;
+    height: 612px;
+    width: 500px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+#crearCuentalogin{
+    background-color: white;
+    border: 1px solid;
+    border-color: white;
+    height: 612px;
+    width: 500px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+#headLogin {
+    text-align: center;
+}
+
+#datosUsuario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 34px;
+    gap: 16px;
+}
+
+#footerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    gap: 23px;
+}
+
+.inputsDatosUsuario {
+    height: 28px;
+    width: 340px;
+}
+
+.noMostrar {
+    display: none !important;
+}

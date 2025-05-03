@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReserveEasy</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>  
+    <header>
+        <h1 id="tituloEncabezado">ReserveEasy</h1>
+        <ul style="user-select: none;">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./tabla.html">Hoteles</a></li>
+            <li><a href="./cliente.html">Cliente</a></li>
+            <li><a href="">Experiencias</a></li>
+            <li><a href="">Bonos </a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="">Ofertas</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section style="position: relative; top: 28px;">
+            <h1 class="tituloPrincipal" style="user-select: none;">Urban Suites - Ciudad de México, México</h1>
+            <div class="contenedorImagenes">
+                <img src="./assets/ImagenesHoteles/andrew-svk-wVhuurTsc4I-unsplash.jpg" alt="" class="imagenesPortada">
+                <img src="./assets/ImagenesHoteles/hunter-so-JTFXPxndXds-unsplash.jpg" alt="" class="imagenesPortada">
+            </div>
+        </section>
+        <br><br>
+
+        <section class="section">
+            <div class="contenedorOferta">
+                <p style="font-weight: bold;font-size: 35px;margin-bottom: 15px;">Descripción</p>
+                <p style="font-size: 20px;">Descubre que tiene este hotel</p>
+                <img src="./assets/ImagenesHoteles/julio-lopez-CbtPT4TZI5E-unsplash.jpg" alt="" class="imagenVenta">
+                <aside class="contenidoImagen">
+                    <div class="contenido">
+                        <br>
+                        <p style="font-size: 19px;">Urban Suites: Comodidad moderna en el corazón <br>de la Ciudad de México</p><br>
+                        <p>
+                        Situado en el vibrante centro de Ciudad de México, <strong>Urban Suites</strong> combina estilo contemporáneo, conveniencia y servicios de alta <br>calidad. Ideal para viajeros urbanos, profesionales y parejas que <br>buscan confort en una ubicación estratégica.
+                        </p><br>
+
+                        <ul>
+                            <li>Gimnasio moderno con equipos de última generación</li>
+                            <li>Café gratis disponible las 24 horas para nuestros huéspedes</li>
+                            <li>WiFi rápido y confiable para trabajo y entretenimiento</li>
+                        </ul><br>
+
+                        <p>
+                        Con una puntuación promedio de <strong>4.2 estrellas</strong>, Urban Suites se posiciona como una excelente opción para quienes valoran la comodidad, la eficiencia y el acceso a lo mejor de la ciudad.
+                        </p>
+
+                        <button class="botonContenidoOferta">Reservar ahora</button>
+                        <div id="modalReserva" class="modal">
+                            <div class="modal-contenido">
+                                <span class="cerrar">&times;</span>
+                                <h2>Formulario de Reserva</h2>
+                                <form class="formulario">
+                                    <label for="nombre" style="margin-left: 10px;">Nombre completo:</label><br><br>
+                                    <input type="text" id="nombre" name="nombre" class="longitudInput" required><br><br>
+
+                                    <label for="correo" style="margin-left: 10px;">Correo electrónico:</label><br><br>
+                                    <input type="email" id="correo" name="correo" required><br><br>
+
+                                    <label for="fecha" style="margin-left: 10px;">Fecha de llegada:</label><br><br>
+                                    <input type="date" id="fechaUno" name="fechaUno" required><br><br>
+
+                                    <label for="noches" style="margin-left: 10px;">Número de noches:</label><br><br>
+                                    <input type="number" id="noches" name="noches" min="1" required><br><br>
+
+                                    <button type="submit" class="botonReservarModal" style="margin-left: 10px;">Confirmar reserva</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">SERVICIOS</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">GIMNASIO</td>
+                        <td class="longitudInput">Acceso a un gimnasio moderno con equipos de última generación para mantener tu rutina.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">CAFÉ GRATIS</td>
+                        <td class="longitudInput">Disfruta de café gratuito disponible durante todo el día en las áreas comunes.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">WIFI RÁPIDO</td>
+                        <td class="longitudInput">Conexión WiFi de alta velocidad para trabajar o disfrutar de tus contenidos favoritos.</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">PLANES</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">SOLITARIO</td>
+                        <td class="longitudInput">Incluye habitación individual, café ilimitado y acceso al gimnasio y WiFi. <br>
+                            <strong>Precio:</strong> $120.000 pesos por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">PAREJA</td>
+                        <td class="longitudInput">Habitación doble con desayuno incluido, gimnasio, café gratis y WiFi rápido. <br>
+                            <strong>Precio:</strong> $190.000 pesos por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">FAMILIAR</td>
+                        <td class="longitudInput">Suite para 4 personas, snacks, acceso completo a todos los servicios y WiFi de alta velocidad. <br>
+                            <strong>Precio:</strong> $280.000 pesos por noche.</td>
+                    </tr>
+                </table>
+            </form>
+
+            <button class="botonReservacion">REALIZAR RESERVACION</button>
+        </div>
+
+        <section class="experiencias" style="margin-bottom: 30px;margin-top: -73px;">
+            <div class="contenedorExperiencias" style=" width: 1227px;">
+                <p style="font-weight: bold;font-size: 30px;">NUESTROS SERVICIOS</p>
+                <p style="font-size: 22px;">Aquí encontrarás los servicios que ofrecemos.</p>
+
+                <div class="contenedorImagenesExperiencias">
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/gold-s-gym-nepal-O3aRo3GGECg-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">GIMNASIO</p>
+                            <p style="color: white;">
+                                Mantente en forma durante tu estancia con acceso a nuestro gimnasio totalmente equipado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/isaac-owens-Oy0LLmQIpEk-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">CAFÉ GRATIS</p>
+                            <p style="color: white;">
+                                Disfruta de café fresco y gratuito todo el día en nuestras zonas comunes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/franck-CAX85x-DdBk-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">WIFI RÁPIDO</p>
+                            <p style="color: white;">
+                                Navega sin interrupciones con nuestra conexión WiFi de alta velocidad disponible en todo el hotel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/franck-CAX85x-DdBk-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">WIFI RÁPIDO</p>
+                            <p style="color: white;">
+                                Navega sin interrupciones con nuestra conexión WiFi de alta velocidad disponible en todo el hotel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="position: relative; top: 28px; display: flex; flex-direction: column; align-items: center;">
+            <p style="font-weight: bold; font-size: 35px; margin-bottom: 15px;">¡Cuéntanos tu experiencia!</p>
+            <form class="formulario">
+                <input type="text" id="opinion" name="opinion" class="longitudInput" style="height: 200px;" required>
+            </form>
+            <button class="botonSubmit">ENVIAR TU RESEÑA</button><br><br><br><br><br>
+        </section> 
+        <br><br>
+    </main>
+
+    <footer>
+        <h1 style="font-size: 22px;">© 2025 ReserveEasy. Todos los derechos reservados.</h1>
+        <div class="contenidoFooter">
+            <div class="contenidoUno">
+                <p>IBERIK
+                    AUGAS SANTAS <br>
+                    BALNEARIO & GOLF **** <br>
+
+                    Pantón (Lugo) <br>
+
+                    982 292 800</p>
+            </div>
+
+            <div class="contenidoDos">
+                <p>
+                    IBERIK <br>
+                    GRAN BALNEARIO <br>
+                    DE GUITIRIZ **** <br>
+
+                    Guitiriz (Lugo) <br>
+
+                    982 920 090
+                </p>
+            </div>
+
+            <div class="contenidoTres">
+                <p>
+                    IBERIK <br>
+                    ROCALLAURA <br>
+                    BALNEARI **** <br>
+
+                    Rocallaura (Lleida) <br>
+
+                    973 330 632
+                </p>
+            </div>
+
+            <div class="contenidoCuatro">
+                <p>
+                    IBERIK <br>
+                    SANTO DOMINGO <br>
+                    PLAZA HOTEL **** <br>
+
+                    Oviedo (Asturias) <br>
+
+                    985 207 880
+                </p>
+            </div>
+
+            <div class="contenidoCinco">
+                <p>
+                    IBERIK <br>
+                    TURISMO RURAL <br>
+                    CASA VILAMOR <br>
+
+                    O Saviñao (Lugo) <br>
+
+                    661 536 257
+                </p>
+            </div>
+
+        </div>
+
+        <h2>CONTACTO | QUIÉNES SOMOS | EMPLEO</h2>
+    </footer>
+    <script>
+        const modal = document.getElementById("modalReserva");
+        const cerrarBtn = document.querySelector(".cerrar");
+        const botonesReserva = document.querySelectorAll(".botonContenidoOferta, .botonReservacion");
+    
+        botonesReserva.forEach(btn => {
+            btn.addEventListener("click", () => {
+                modal.style.display = "flex";
+            });
+        });
+    
+        cerrarBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

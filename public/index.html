@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReserveEasy</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.min.js"></script>
+</head>
+
+<body>
+
+    <section id="seccionLogin">
+        <aside id="login">
+            <div class="contenidoLogin">
+                <div id="headLogin">
+                    <h1 style="font-size: 30px;"> INICIA SESION CON <br> RESERVE EASY</h1>
+                </div>
+                <div id="datosUsuario">
+                    <label for="">Correo electronico</label>
+                    <input type="email" class="inputsDatosUsuario" id="logincorreo">
+                    <label for="">contraseña</label>
+                    <input type="password" class="inputsDatosUsuario" id="logincontraseña">
+                </div>
+                <input type="checkbox"><label for="">Acuerdate de mi</label>
+
+                <div id="footerLogin">
+                    <button class="botonReservarModal" id="botoniniciarlogin" style="width: 342px;height: 68px;">INICIAR
+                        SESION</button>
+                    <button class="botonReservarModal" id="botoncrearlogin" style="width: 342px;height: 68px;">CREAR
+                        CUENTA</button>
+                    <a href="">Olvide mi contraseña</a>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+    <section id="seccionCrearCuenta" class="noMostrar">
+        <aside id="crearCuentalogin">
+            <div>
+                <div id="headLogin">
+                    <h1 style="font-size: 30px;">CREAR CUENTA</h1>
+                </div>
+
+                <div id="datosUsuario">
+                    <label for="">Nombre completo</label>
+                    <input type="text" class="inputsDatosUsuario" id="nombre">
+                    <label for="">Correo electronico existente</label>
+                    <input type="email" class="inputsDatosUsuario" id="correo">
+                    <label for="">Crea una contraseña</label>
+                    <input type="password" class="inputsDatosUsuario" id="contraseña">
+                </div>
+                <input type="checkbox"><label for="">Acuerdate de mi</label>
+
+                <div id="footerLogin">
+                    <button class="botonReservarModal" id="botoncrearCuenta"
+                        style="width: 342px;height: 68px;">CREAR</button>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+
+    <section id="contenedorPrincipal" class="noMostrar">
+        <header>
+            <h1 id="tituloEncabezado">ReserveEasy</h1>
+            <ul style="user-select: none;">
+                <li><a href="">Inicio</a></li>
+                <li><a href="./tabla.html">Hoteles</a></li>
+                <li><a href="./cliente.html">Cliente</a></li>
+                <li><a href="">Experiencias</a></li>
+                <li><a href="">Bonos </a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="">Ofertas</a></li>
+            </ul>
+        </header>
+
+        <main>
+
+            <section style="position: relative; top: 28px;">
+                <h1 class="tituloPrincipal" style="user-select: none;">Tu próxima estadía comienza aquí: Relájate,
+                    Disfruta,
+                    Reserva"</h1>
+                <div class="contenedorImagenes">
+                    <img src="./assets/hoteles-de-lujo---nuevos-hoteles-de-lujo-en-2024.jpg" alt=""
+                        class="imagenesPortada">
+                    <img src="./assets/Fz8ZGLfcYFazV5CQGxug_large.jpg" alt="" class="imagenesPortada">
+                </div>
+            </section>
+
+
+            <section class="sectionReservar">
+                <input type="text" placeholder="Destino" name="destino" required>
+                <input type="date" placeholder="dd/mm/aa" name="fechaUno" required>
+                <input type="date" placeholder="dd/mm/aa" name="fechaDos" required>
+                <button class="botones" type="submit">Buscar</button>
+            </section>
+
+
+            <section class="section">
+                <div class="contenedorOferta">
+                    <p style="font-weight: bold;font-size: 35px;margin-bottom: 15px;">Oferta especial</p>
+                    <p style="font-size: 20px;">Consigue ahora ventajas y descuentos exclusivos.</p>
+                    <img src="./assets/bonos-regalo.jpg" alt="" class="imagenVenta">
+                    <aside class="contenidoImagen">
+                        <div class="contenido">
+                            <br>
+                            <p style="font-size: 19px;">Escapada Romantica:Amor en el paraiso</p><br>
+                            <p>Disfruta de una experiencia única para dos en nuestro hotel.
+                                Este paquete especial incluye:</p><br>
+                            <ul>
+                                <li>2 noches en una suite romántica</li>
+                                <li>Desayuno gourmet en la habitación</li>
+                                <li>Cena romántica con maridaje de vinos</li>
+                                <li>Acceso al spa con un 50% de descuento</li>
+                            </ul><br>
+                            <p>Detalle especial</p>
+                            <ul>
+                                <li>Reserva antes del 31 de mayo y ahorra un 25% en tu estadía.</li>
+                                <li>CTA: ¡Sorprende a tu pareja y reserva ahora!</li>
+                            </ul>
+                            <button class="botonContenidoOferta">Quiero hacer parte</button>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="contenedorOferta">
+                    <p style="font-weight: bold;font-size: 35px;margin-bottom: 15px;">Activa Tus Ventajas Exclusivas</p>
+                    <p style="font-size: 20px;">Disfruta al máximo con nuestras ventajas especiales.</p>
+                    <img src="./assets/dsc4113-hdr.jpg" alt="" class="imagenVenta">
+                    <aside class="contenidoImagenDos">
+                        <div class="contenidoDOS">
+                            <br>
+                            <p style="font-size: 19px;">Aventura Familiar: Diversión para Todos</p><br>
+                            <p>Vive momentos inolvidables con tu familia en nuestro resort. Este paquete incluye:</p>
+                            <br>
+                            <ul>
+                                <li>3 noches en una habitación familiar con vista al mar</li>
+                                <li>Desayuno buffet ilimitado para toda la familia</li>
+                                <li>Actividades recreativas para niños y adultos</li>
+                                <li>Acceso gratuito al parque acuático</li>
+                            </ul><br>
+                            <p>Oferta Especial</p>
+                            <ul>
+                                <li>Reserva antes del 15 de junio y obtén un 30% de descuento en tu estadía.</li>
+                                <li>¡No esperes más y reserva ahora para garantizar tu lugar!</li>
+                            </ul>
+                            <button class="botonContenidoOferta">Quiero hacer parte</button>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="experiencias" style="margin-bottom: 30px;margin-top: -73px;">
+                <div class="contenedorExperiencias" style=" width: 1227px;">
+                    <p style="font-weight: bold;font-size: 30px;">EXPERIENCIAS</p>
+                    <p style="font-size: 22px;">Consigue ahora ventajas y descuentos exclusivos.</p>
+
+                    <div class="contenedorImagenesExperiencias">
+                        <div class="hotel-imagen"
+                            style="background-image: url(./assets/ImagenesExperiencias/andy-holmes-90S8ll64S_o-unsplash.jpg);">
+                            <div class="contenidoImagen-hotel">
+                                <p style="color: white;font-weight: bold;font-size: 24px;">Escapada Golf a la Ribeira
+                                    Sacra
+                                </p>
+                                <p style="color: white;">
+                                    Disfruta de una estancia perfecta en nuestras acogedoras habitaciones y de un
+                                    completo
+                                    desayuno buffet al despertarte. <br>
+                                    Practica tu mejor swing en el su campo de golf diseñado por Alfonso Vidaor (1). <br>
+                                    En el caso de que alguno de los ocupantes de la habitación no desee hacer uso del
+                                    grenn
+                                    fee, puede acceder al balneario. <br><br><br>
+
+                                    Desde 67,65 € por persona en habitación doble (IVA incluido)
+                                    Oferta sujeta a disponibilidad
+                                </p>
+
+                                <button class="botonContenidoImagen">RESERVAR</button>
+                            </div>
+                        </div>
+
+                        <div class="hotel-imagen"
+                            style="background-image: url(./assets/ImagenesExperiencias/dominik-jirovsky-re2LZOB2XvY-unsplash.jpg);">
+                            <div class="contenidoImagen-hotel">
+                                <p style="color: white;font-weight: bold;font-size: 24px;">Escapada Golf a la Ribeira
+                                    Sacra
+                                </p>
+                                <p style="color: white;">
+                                    Disfruta de una estancia perfecta en nuestras acogedoras habitaciones y de un
+                                    completo
+                                    desayuno buffet al despertarte. <br>
+                                    Practica tu mejor swing en el su campo de golf diseñado por Alfonso Vidaor (1). <br>
+                                    En el caso de que alguno de los ocupantes de la habitación no desee hacer uso del
+                                    grenn
+                                    fee, puede acceder al balneario. <br><br><br>
+
+                                    Desde 67,65 € por persona en habitación doble (IVA incluido)
+                                    Oferta sujeta a disponibilidad
+                                </p>
+
+                                <button class="botonContenidoImagen">RESERVAR</button>
+                            </div>
+                        </div>
+
+                        <div class="hotel-imagen"
+                            style="background-image: url(./assets/ImagenesExperiencias/dominik-jirovsky-re2LZOB2XvY-unsplash.jpg);">
+                            <div class="contenidoImagen-hotel">
+                                <p style="color: white;font-weight: bold;font-size: 24px;">Escapada Golf a la Ribeira
+                                    Sacra
+                                </p>
+                                <p style="color: white;">
+                                    Disfruta de una estancia perfecta en nuestras acogedoras habitaciones y de un
+                                    completo
+                                    desayuno buffet al despertarte. <br>
+                                    Practica tu mejor swing en el su campo de golf diseñado por Alfonso Vidaor (1). <br>
+                                    En el caso de que alguno de los ocupantes de la habitación no desee hacer uso del
+                                    grenn
+                                    fee, puede acceder al balneario. <br><br><br>
+
+                                    Desde 67,65 € por persona en habitación doble (IVA incluido)
+                                    Oferta sujeta a disponibilidad
+                                </p>
+                                <button class="botonContenidoImagen">RESERVAR</button>
+                            </div>
+                        </div>
+
+                        <div class="hotel-imagen"
+                            style="background-image: url(./assets/ImagenesExperiencias/splash-pic-ufcDM0ApEBs-unsplash.jpg);">
+                            <div class="contenidoImagen-hotel">
+                                <p style="color: white;font-weight: bold;font-size: 24px;">Escapada Golf a la Ribeira
+                                    Sacra
+                                </p>
+                                <p style="color: white;">
+                                    Disfruta de una estancia perfecta en nuestras acogedoras habitaciones y de un
+                                    completo
+                                    desayuno buffet al despertarte. <br>
+                                    Practica tu mejor swing en el su campo de golf diseñado por Alfonso Vidaor (1). <br>
+                                    En el caso de que alguno de los ocupantes de la habitación no desee hacer uso del
+                                    grenn
+                                    fee, puede acceder al balneario. <br><br><br>
+
+                                    Desde 67,65 € por persona en habitación doble (IVA incluido)
+                                    Oferta sujeta a disponibilidad
+                                </p>
+
+                                <button class="botonContenidoImagen">RESERVAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <h1 style="font-size: 22px;">© 2025 ReserveEasy. Todos los derechos reservados.</h1>
+            <div class="contenidoFooter">
+                <div class="contenidoUno">
+                    <p>IBERIK
+                        AUGAS SANTAS <br>
+                        BALNEARIO & GOLF **** <br>
+
+                        Pantón (Lugo) <br>
+
+                        982 292 800</p>
+                </div>
+
+                <div class="contenidoDos">
+                    <p>
+                        IBERIK <br>
+                        GRAN BALNEARIO <br>
+                        DE GUITIRIZ **** <br>
+
+                        Guitiriz (Lugo) <br>
+
+                        982 920 090
+                    </p>
+                </div>
+
+                <div class="contenidoTres">
+                    <p>
+                        IBERIK <br>
+                        ROCALLAURA <br>
+                        BALNEARI **** <br>
+
+                        Rocallaura (Lleida) <br>
+
+                        973 330 632
+                    </p>
+                </div>
+
+                <div class="contenidoCuatro">
+                    <p>
+                        IBERIK <br>
+                        SANTO DOMINGO <br>
+                        PLAZA HOTEL **** <br>
+
+                        Oviedo (Asturias) <br>
+
+                        985 207 880
+                    </p>
+                </div>
+
+                <div class="contenidoCinco">
+                    <p>
+                        IBERIK <br>
+                        TURISMO RURAL <br>
+                        CASA VILAMOR <br>
+
+                        O Saviñao (Lugo) <br>
+
+                        661 536 257
+                    </p>
+                </div>
+            </div>
+
+            <h2>CONTACTO | QUIÉNES SOMOS | EMPLEO</h2>
+
+        </footer>
+    </section>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

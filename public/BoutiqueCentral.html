@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReserveEasy</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>  
+    <header>
+        <h1 id="tituloEncabezado">ReserveEasy</h1>
+        <ul style="user-select: none;">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./tabla.html">Hoteles</a></li>
+            <li><a href="./cliente.html">Cliente</a></li>
+            <li><a href="">Experiencias</a></li>
+            <li><a href="">Bonos </a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="">Ofertas</a></li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section style="position: relative; top: 28px;">
+            <h1 class="tituloPrincipal" style="user-select: none;">Boutique Central - Madrid, España</h1>
+            <div class="contenedorImagenes">
+                <img src="./assets/ImagenesHoteles/manuel-moreno-DGa0LQ0yDPc-unsplash.jpg" alt="" class="imagenesPortada">
+                <img src="./assets/ImagenesHoteles/dmitrii-e-jvIuDt-39Kg-unsplash.jpg" alt="" class="imagenesPortada">
+            </div>
+        </section>
+        <br><br>
+
+        <section class="section">
+            <div class="contenedorOferta">
+                <p style="font-weight: bold;font-size: 35px;margin-bottom: 15px;">Descripción</p>
+                <p style="font-size: 20px;">Descubre que tiene este hotel</p>
+                <img src="./assets/ImagenesHoteles/yanhao-fang-FyljUVhcxFo-unsplash.jpg" alt="" class="imagenVenta">
+                <aside class="contenidoImagen">
+                    <div class="contenido">
+                        <br>
+                        <p style="font-size: 19px;">Boutique Central: Historia, arte y elegancia en el <br>corazón de Madrid</p><br>
+                        <p>
+                        Ubicado en el emblemático centro histórico de Madrid, el <br><strong>Boutique Central</strong> ofrece una experiencia cultural y sofisticada <br>con acceso inmediato a los principales puntos turísticos y una ambientación artística sin igual. Ideal para exploradores urbanos, <br>parejas y amantes del arte.
+                        </p><br>
+
+                        <ul>
+                            <li>Ubicación privilegiada en el centro histórico</li>
+                            <li>Bodega con una selecta carta de vinos españoles</li>
+                            <li>Galerías con arte local en cada piso del hotel</li>
+                        </ul><br>
+
+                        <p>
+                        Con una puntuación promedio de <strong>4.4 estrellas</strong>, Boutique Central <br>es la opción perfecta para quienes buscan una estadía elegante, <br>cultural y llena de estilo en Madrid.
+                        </p>
+
+                        <button class="botonContenidoOferta">Reservar ahora</button>
+                        <div id="modalReserva" class="modal">
+                            <div class="modal-contenido">
+                                <span class="cerrar">&times;</span>
+                                <h2>Formulario de Reserva</h2>
+                                <form class="formulario">
+                                    <label for="nombre" style="margin-left: 10px;">Nombre completo:</label><br><br>
+                                    <input type="text" id="nombre" name="nombre" class="longitudInput" required><br><br>
+
+                                    <label for="correo" style="margin-left: 10px;">Correo electrónico:</label><br><br>
+                                    <input type="email" id="correo" name="correo" required><br><br>
+
+                                    <label for="fecha" style="margin-left: 10px;">Fecha de llegada:</label><br><br>
+                                    <input type="date" id="fechaUno" name="fechaUno" required><br><br>
+
+                                    <label for="noches" style="margin-left: 10px;">Número de noches:</label><br><br>
+                                    <input type="number" id="noches" name="noches" min="1" required><br><br>
+
+                                    <button type="submit" class="botonReservarModal" style="margin-left: 10px;">Confirmar reserva</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">SERVICIOS</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">CENTRO HISTÓRICO</td>
+                        <td class="longitudInput">Ubicación en el corazón de Madrid con acceso a los principales atractivos turísticos.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">BODEGA</td>
+                        <td class="longitudInput">Selección de vinos en una bodega exclusiva dentro del hotel.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">ARTE LOCAL</td>
+                        <td class="longitudInput">Cada piso del hotel cuenta con exposiciones de artistas madrileños contemporáneos.</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="seccionFormulario">
+            <form action="" class="formulario">
+                <table class="tabla">
+                    <tr>
+                        <th colspan="2" class="longitudDatos"
+                            style="font-size: 17px; height: 35px;background-color: #024CAA;color: white">PLANES</th>
+                    </tr>
+
+                    <tr>
+                        <td class="longitudDatos">SOLITARIO</td>
+                        <td class="longitudInput">Incluye una habitación individual, desayuno incluido y acceso a la bodega. <br>
+                            <strong>Precio:</strong> $120.000 pesos por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">PAREJA</td>
+                        <td class="longitudInput">Habitación doble con vista urbana, cena con maridaje en la bodega y recorrido guiado por el arte del hotel. <br>
+                            <strong>Precio:</strong> $210.000 pesos por noche.</td>
+                    </tr>
+                    <tr>
+                        <td class="longitudDatos">FAMILIAR</td>
+                        <td class="longitudInput">Suite para 4 personas, menú familiar en restaurante cercano, visita cultural y galería privada. <br>
+                            <strong>Precio:</strong> $320.000 pesos por noche.</td>
+                    </tr>
+                </table>
+            </form>
+
+            <button class="botonReservacion">REALIZAR RESERVACION</button>
+        </div>
+
+        <section class="experiencias" style="margin-bottom: 30px;margin-top: -73px;">
+            <div class="contenedorExperiencias" style=" width: 1227px;">
+                <p style="font-weight: bold;font-size: 30px;">NUESTROS SERVICIOS</p>
+                <p style="font-size: 22px;">Aquí encontrarás los servicios que ofrecemos.</p>
+
+                <div class="contenedorImagenesExperiencias">
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/nana-Vuq5trkmBZM-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">CENTRO HISTÓRICO</p>
+                            <p style="color: white;">
+                                Disfruta de la cercanía a los principales monumentos, museos y restaurantes del centro de Madrid.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/randy-van-PnKWjwSu81g-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">BODEGA</p>
+                            <p style="color: white;">
+                                Disfruta de vinos selectos españoles en un espacio íntimo, ideal para encuentros memorables.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/annie-spratt-GqjGpUzRnP8-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">ARTE LOCAL</p>
+                            <p style="color: white;">
+                                Conecta con el talento madrileño a través de exposiciones temporales y murales únicos en cada piso.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hotel-imagen"
+                        style="background-image: url(./assets/ImagenesHoteles/annie-spratt-GqjGpUzRnP8-unsplash.jpg);">
+                        <div class="contenidoImagen-hotel">
+                            <p style="color: white;font-weight: bold;font-size: 24px;">ARTE LOCAL</p>
+                            <p style="color: white;">
+                                Conecta con el talento madrileño a través de exposiciones temporales y murales únicos en cada piso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="position: relative; top: 28px; display: flex; flex-direction: column; align-items: center;">
+            <p style="font-weight: bold; font-size: 35px; margin-bottom: 15px;">¡Cuéntanos tu experiencia!</p>
+            <form class="formulario">
+                <input type="text" id="opinion" name="opinion" class="longitudInput" style="height: 200px;" required>
+            </form>
+            <button class="botonSubmit">ENVIAR TU RESEÑA</button><br><br><br><br><br>
+        </section> 
+        <br><br>
+    </main>
+
+    <footer>
+        <h1 style="font-size: 22px;">© 2025 ReserveEasy. Todos los derechos reservados.</h1>
+        <div class="contenidoFooter">
+            <div class="contenidoUno">
+                <p>IBERIK
+                    AUGAS SANTAS <br>
+                    BALNEARIO & GOLF **** <br>
+
+                    Pantón (Lugo) <br>
+
+                    982 292 800</p>
+            </div>
+
+            <div class="contenidoDos">
+                <p>
+                    IBERIK <br>
+                    GRAN BALNEARIO <br>
+                    DE GUITIRIZ **** <br>
+
+                    Guitiriz (Lugo) <br>
+
+                    982 920 090
+                </p>
+            </div>
+
+            <div class="contenidoTres">
+                <p>
+                    IBERIK <br>
+                    ROCALLAURA <br>
+                    BALNEARI **** <br>
+
+                    Rocallaura (Lleida) <br>
+
+                    973 330 632
+                </p>
+            </div>
+
+            <div class="contenidoCuatro">
+                <p>
+                    IBERIK <br>
+                    SANTO DOMINGO <br>
+                    PLAZA HOTEL **** <br>
+
+                    Oviedo (Asturias) <br>
+
+                    985 207 880
+                </p>
+            </div>
+
+            <div class="contenidoCinco">
+                <p>
+                    IBERIK <br>
+                    TURISMO RURAL <br>
+                    CASA VILAMOR <br>
+
+                    O Saviñao (Lugo) <br>
+
+                    661 536 257
+                </p>
+            </div>
+
+        </div>
+
+        <h2>CONTACTO | QUIÉNES SOMOS | EMPLEO</h2>
+    </footer>
+    <script>
+        const modal = document.getElementById("modalReserva");
+        const cerrarBtn = document.querySelector(".cerrar");
+        const botonesReserva = document.querySelectorAll(".botonContenidoOferta, .botonReservacion");
+    
+        botonesReserva.forEach(btn => {
+            btn.addEventListener("click", () => {
+                modal.style.display = "flex";
+            });
+        });
+    
+        cerrarBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
