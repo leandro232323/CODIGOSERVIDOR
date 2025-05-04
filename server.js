@@ -85,7 +85,7 @@ app.listen(PORT, () => {
 })
 
 app.listen(3000, '0.0.0.0', () => {
-    console.log("Servidor listo en http://186.82.18.24:3000");
+    console.log("Servidor listo en http://181.234.87.110:3000");
 });
 
 
