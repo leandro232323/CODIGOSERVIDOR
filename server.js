@@ -84,6 +84,10 @@ app.listen(PORT, () => {
     console.log(`el servidor esta corriendo en http://localhost:${PORT}`)
 })
 
+app.listen(3000, '0.0.0.0', () => {
+    console.log("Servidor listo en http://186.82.18.24:3000");
+});
+
 
 function formatoCorreo(correo) {
     let posicionArroba = 0
