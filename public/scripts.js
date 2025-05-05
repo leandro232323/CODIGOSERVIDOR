@@ -55,7 +55,7 @@ function iniciar() {
 }
 
 function iniciarServidor() {
-    fetch('http://181.234.87.110:3000/iniciar')
+    fetch('http://10.0.2.15:3000/iniciar')
         .then(solicitud => {
             if (!solicitud.ok) {
                 alert("Error al conectarse con el servidor")
@@ -69,7 +69,7 @@ function iniciarServidor() {
 
 function iniciarSesion(correoUsuario, contraseñaUsuario) {
 
-    fetch('http://181.234.87.110:3000/iniciarSesion', {
+    fetch('http://10.0.2.15:3000/iniciarSesion', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ function iniciarSesion(correoUsuario, contraseñaUsuario) {
 
 function registrar(nombreUsuario, correoUsuario, clave) {
 
-    fetch('http://181.234.87.110:3000/registrar', {
+    fetch('http://10.0.2.15:3000/registrar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
