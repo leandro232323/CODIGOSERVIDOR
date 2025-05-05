@@ -80,10 +80,6 @@ app.post('/iniciarSesion', async (req, res) => {
 })
 
 
-app.listen(PORT, () => {
-    console.log(`el servidor esta corriendo en http://localhost:${PORT}`)
-})
-
 app.listen(3000, '0.0.0.0', () => {
     console.log("Servidor listo en http://181.234.87.110:3000");
 });
